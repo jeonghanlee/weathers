@@ -10,31 +10,17 @@ declare -gr SC_SCRIPTNAME=${0##*/}
 declare -gr SC_TOP="${SC_SCRIPT%/*}"
 declare -gr SC_LOGDATE="$(date +%y%m%d%H%M)"
 
-declare -a file_list=();
-
-file_list+="Lund.png"
-file_list+="Busan.png"
-file_list+="Aberdeen.png"
-
 function git_configs
 {
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
 }
 
-function git_add_files
-{
-    for afile in  ${file_list[@]}; do
-	git add -f ${SC_TOP}/${afile}
-    done
-    
-}
-
   
 function git_commit
 {
     git checkout master
-    git_add_files
+    git add -f ${SC_TOP}/*.png
     git commit -m "Update Weather Info: $SC_LOGDATE (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
