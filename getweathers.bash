@@ -43,6 +43,8 @@ function die
 
 
 
+rm -rf *.png
+
 wget wttr.in/Lund.png
 wget wttr.in/Busan.png
 wget wttr.in/Aberdeen.png
