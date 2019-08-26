@@ -1,8 +1,6 @@
 name: wttr.in
 
 on: [push] 
-  schedule:
-  - cron : '*/15 * * * *'
 
 jobs:
   build:
