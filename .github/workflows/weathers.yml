@@ -11,10 +11,12 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
+    strategy:
+      matrix:
+        city: [Lund, Busan, Aberdeen]
     steps:
     - uses: actions/checkout@v1
-    - name: Run a multi-line script
+    - name: 
       run: |
-        curl wttr.in/Lund
-        wget wttr.in/Lund.png
+        curl wttr.in/${{ matrix.city }}
+        wget wttr.in/${{ matrix.city }}.png
