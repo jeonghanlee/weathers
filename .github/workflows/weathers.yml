@@ -1,0 +1,17 @@
+name: wttr.in
+
+on: 
+  schedule:
+  - cron : '*/15 * * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a multi-line script
+      run: |
+        curl wttr.in/Lund
+        wget wttr.in/Lund.png
