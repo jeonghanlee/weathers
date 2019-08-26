@@ -1,6 +1,11 @@
 name: wttr.in
 
-on: [push] 
+on:
+  push:
+    branches:
+    - master
+  scheduled:
+  - cron:  '0 * * * *'
 
 jobs:
   build:
