@@ -22,7 +22,7 @@ function git_configs
   git config --global user.name "Travis CI"
 }
 
-function git_add
+function git_add_files
 {
     for afile in  ${file_list[@]}; do
 	git add -f ${SC_TOP}/${afile}

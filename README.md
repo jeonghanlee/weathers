@@ -12,6 +12,6 @@ Weathers
 
 ![Busan Weather](Busan.png)
 
-# Averdeen, Scotland
+# Aberdeen, Scotland
 
 ![Aberdeen Weather](Aberdeen.png)
