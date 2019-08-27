@@ -45,17 +45,9 @@ function die
 
 rm -rf *.png
 
-<<<<<<< HEAD
-suffix="_Fpm.png"
 
-wget wttr.in/Lund${suffix}
-wget wttr.in/Busan${suffix}
-wget wttr.in/Aberdeen${suffix}
-=======
-wget wttr.in/Lund.png
-wget wttr.in/Busan.png
-wget wttr.in/Aberdeen.png
->>>>>>> parent of b09ee5b... update png files
-
+wget wttr.in/Lund_m.png
+wget wttr.in/Busan_m.png
+wget wttr.in/Aberdeen_m.png
 
 exit

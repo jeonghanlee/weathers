@@ -6,24 +6,13 @@ Weathers
 
 # Lund, Sweden
 
-<<<<<<< HEAD
-![Lund Weather](Lund_Fpm.png)
+![Lund Weather](Lund_m.png)
 
 # Busan, South Korea
 
-![Busan Weather](Busan_Fpm.png)
+![Busan Weather](Busan_m.png)
 
 # Aberdeen, Scotland
 
-![Aberdeen Weather](Aberdeen_Fpm.png)
-=======
-![Lund Weather](Lund.png)
+![Aberdeen Weather](Aberdeen_m.png)
 
-# Busan, South Korea
-
-![Busan Weather](Busan.png)
-
-# Aberdeen, Scotland
-
-![Aberdeen Weather](Aberdeen.png)
->>>>>>> parent of b09ee5b... update png files
