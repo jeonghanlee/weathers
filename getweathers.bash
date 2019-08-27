@@ -42,12 +42,16 @@ function die
 }
 
 
-
 rm -rf *.png
 
-wget wttr.in/Lund.png
-wget wttr.in/Busan.png
-wget wttr.in/Aberdeen.png
+
+wget -O Lund.png wttr.in/Lund_Fm.png
+wget -O Busan.png wttr.in/Busan_Fm.png
+wget -O Aberdeen.png wttr.in/Aberdeen_Fm.png
+
+mv Lund.png Lund_Fm.png
+mv Busan.png Busan_Fm.png
+mv Aberdeen.png Aberdeen_Fm.png
 
 
 exit

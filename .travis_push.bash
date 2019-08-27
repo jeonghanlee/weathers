@@ -20,7 +20,7 @@ function git_configs
 function git_commit
 {
     git checkout master
-    git add -f ${SC_TOP}/*.png
+    git add -f ${SC_TOP}/*_Fm.png
     git commit -m "Update Weather Info: $SC_LOGDATE (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
@@ -31,6 +31,8 @@ function git_push
   # Add new "origin" with access token in the git URL for authentication
   git remote add origin https://jeonghanlee:${GH_TOKEN}@github.com/jeonghanlee/weathers.git > /dev/null 2>&1
   git push origin master --quiet
+  git push origin master
+
 }
 
 
