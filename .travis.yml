@@ -1,15 +1,23 @@
 sudo: enabled
+
 dist: xenial
+
 language: generic
-branches:
-  only:
-  - master
+
 before_install:
-- sudo apt install -y wget
+  - sudo apt install -y wget
+
 install:
-- bash getweathers.bash
+  - wget -O Lund.png wttr.in/Lund_Fm.png
+  - wget -O Busan.png wttr.in/Busan_Fm.png
+  - wget -O Aberdeen.png wttr.in/Aberdeen_Fm.png
+  - mv Lund.png Lund_Fm.png
+  - mv Busan.png Busan_Fm.png
+  - mv Aberdeen.png Aberdeen_Fm.png
+
 after_success:
-- bash .travis_push.bash
+  - bash .travis_push.bash
+
 env:
   global:
     secure: LhB+iGWxZy9nZOCtTYkQYlM+Idkp7btmEZmFEX30+IlGBubguZExY9Rg7Lt30qqPakbRKy0utDSDJrJpQGhim2dqwRZryny2vM7ZmmOnwZm2WYNDXn/2/qnLm6Bm/HR9DwYp/TrxJajMx5fSU7IemNX+tR5K3TZVFCjMJCyJ5f+E+wRvDdacgUYMSZvv5tqPZSNl2Domujq59eg38ikrLubdo5k8XwPTN7vhb01DA3grrJc3fIVysj2P0JwD/hZZacZ6fFA3e8m/pklMtoRC3kmDDZGTuJ2WN1sVJE7spum0aTpU01sAyt8aS+s5PI3JLieDl57Yu0x7f8Y/korUov46Bl0k4ECdy2w88OEUuAVSlxDu60VzlOTG3KV+Z10gxFww7zxCMXXSytJ0wCMGQE9D+qCqiTJTTzzKBmxQPL2XDufqFe0+m9uNGGL+1e+j19VQB+qD3n988cfV3vzZECEMjv9OJq27DDh/HMcMxLAdDbLqD9jGjqGDp1eDtesoI8ySLk3rb31Opt35GISZHVqskn9iaoELqPL1r1XbP//VCQUrZGu/fT1TxXMOOrl0IpJsp1C0eWH+8YnrhmxhEPzT0fyUQtOnUapNVZuOBAe5eRPtZHu5YtxD4DusyBUMTKytVU0FfD3wT8/MrbElB+cFu/nlQvrFo4GAqqXkLOA=
