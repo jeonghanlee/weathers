@@ -43,7 +43,7 @@ function die
 
 
 
-rm -rf *.png
+rm -rf Lund_Fm.png Busan_Fm.png  Aberdeen_Fm.png
 
 
 wget wttr.in/Lund_Fm.png
