@@ -43,7 +43,9 @@ function die
 
 
 
-rm -rf Lund_Fm.png Busan_Fm.png  Aberdeen_Fm.png
+rm -rf ${TRAVIS_BUILD_DIR}/Lund_Fm.png
+rm -rf ${TRAVIS_BUILD_DIR}/Busan_Fm.png
+rm -rf ${TRAVIS_BUILD_DIR}/Aberdeen_Fm.png
 
 
 wget wttr.in/Lund_Fm.png
