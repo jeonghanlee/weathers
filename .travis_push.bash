@@ -31,8 +31,6 @@ function git_push
   # Add new "origin" with access token in the git URL for authentication
   git remote add origin https://jeonghanlee:${GH_TOKEN}@github.com/jeonghanlee/weathers.git > /dev/null 2>&1
   git push origin master --quiet
-  git push origin master
-
 }
 
 
