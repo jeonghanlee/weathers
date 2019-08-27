@@ -43,11 +43,14 @@ function die
 
 
 
+
 rm -rf *.png
 
-wget wttr.in/Lund.png
-wget wttr.in/Busan.png
-wget wttr.in/Aberdeen.png
+suffix="_Fptm.png"
+
+wget wttr.in/Lund${suffix}
+wget wttr.in/Busan${suffix}
+wget wttr.in/Aberdeen${suffix}
 
 
 exit
