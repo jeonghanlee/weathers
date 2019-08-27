@@ -42,6 +42,9 @@ function die
 }
 
 
+rm -rf *.png
+
+
 wget -O Lund.png wttr.in/Lund_Fm.png
 wget -O Busan.png wttr.in/Busan_Fm.png
 wget -O Aberdeen.png wttr.in/Aberdeen_Fm.png
