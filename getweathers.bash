@@ -42,14 +42,13 @@ function die
 }
 
 
+wget -O Lund.png wttr.in/Lund_Fm.png
+wget -O Busan.png wttr.in/Busan_Fm.png
+wget -O Aberdeen.png wttr.in/Aberdeen_Fm.png
 
-rm -rf ${TRAVIS_BUILD_DIR}/Lund_Fm.png
-rm -rf ${TRAVIS_BUILD_DIR}/Busan_Fm.png
-rm -rf ${TRAVIS_BUILD_DIR}/Aberdeen_Fm.png
+mv Lund.png Lund_Fm.png
+mv Busan.png Busan_Fm.png
+mv Aberdeen.png Aberdeen_Fm.png
 
-
-wget wttr.in/Lund_Fm.png
-wget wttr.in/Busan_Fm.png
-wget wttr.in/Aberdeen_Fm.png
 
 exit
