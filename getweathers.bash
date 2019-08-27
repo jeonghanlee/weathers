@@ -46,8 +46,8 @@ function die
 rm -rf *.png
 
 
-wget wttr.in/Lund_m.png
-wget wttr.in/Busan_m.png
-wget wttr.in/Aberdeen_m.png
+wget wttr.in/Lund_Fm.png
+wget wttr.in/Busan_Fm.png
+wget wttr.in/Aberdeen_Fm.png
 
 exit

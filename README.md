@@ -6,13 +6,13 @@ Weathers
 
 # Lund, Sweden
 
-![Lund Weather](Lund_m.png)
+![Lund Weather](Lund_Fm.png)
 
 # Busan, South Korea
 
-![Busan Weather](Busan_m.png)
+![Busan Weather](Busan_Fm.png)
 
 # Aberdeen, Scotland
 
-![Aberdeen Weather](Aberdeen_m.png)
+![Aberdeen Weather](Aberdeen_Fm.png)
 

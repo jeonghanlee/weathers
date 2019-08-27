@@ -20,7 +20,7 @@ function git_configs
 function git_commit
 {
     git checkout master
-    git add -f ${SC_TOP}/*.png
+    git add -f ${SC_TOP}/*_Fm.png
     git commit -m "Update Weather Info: $SC_LOGDATE (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
