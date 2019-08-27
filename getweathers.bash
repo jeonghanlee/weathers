@@ -46,11 +46,11 @@ function die
 
 rm -rf *.png
 
-suffix="_Fptm.png"
+suffix="_Fpm.png"
 
-wget wttr.in/Lund${suffix}
-wget wttr.in/Busan${suffix}
-wget wttr.in/Aberdeen${suffix}
+wget -O Lund.png wttr.in/Lund${suffix}
+wget -O Busan.png wttr.in/Busan${suffix}
+wget -O Aberdeen.png wttr.in/Aberdeen${suffix}
 
 
 exit
