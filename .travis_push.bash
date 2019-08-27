@@ -29,7 +29,7 @@ function git_push
   # Remove existing "origin"
   git remote rm origin
   # Add new "origin" with access token in the git URL for authentication
-  git remote add origin https://jeonghanlee:${GH_TOKEN}@github.com/jeonghanlee/weather.git > /dev/null 2>&1
+  git remote add origin https://jeonghanlee:${GH_TOKEN}@github.com/jeonghanlee/weathers.git > /dev/null 2>&1
   git push origin master --quiet
 }
 
