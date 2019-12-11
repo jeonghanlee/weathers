@@ -18,8 +18,8 @@
 #
 #   author  : Jeong Han Lee
 #   email   : jeonghan.lee@gmail.com
-#   date    : Monday, August 26 22:56:51 CEST 2019
-#   version : 0.0.1
+#   date    : Wednesday, December 11 09:43:15 CET 2019
+#   version : 0.0.2
 
 
 declare -gr SC_SCRIPT="$(realpath "$0")"
@@ -44,12 +44,13 @@ function die
 
 rm -rf *.png
 
-
-wget -O Lund.png wttr.in/Lund_Fm.png
+wget -O Berkeley.png wttr.in/Berkeley_Fm.png
+#wget -O Lund.png wttr.in/Lund_Fm.png
 wget -O Busan.png wttr.in/Busan_Fm.png
 wget -O Aberdeen.png wttr.in/Aberdeen_Fm.png
 
-mv Lund.png Lund_Fm.png
+#mv Lund.png Lund_Fm.png
+mv Berkeley.png.png Berkeley_Fm.png
 mv Busan.png Busan_Fm.png
 mv Aberdeen.png Aberdeen_Fm.png
 

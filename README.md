@@ -4,9 +4,10 @@ Weathers
 [![Build Status](https://travis-ci.org/jeonghanlee/weathers.svg?branch=master)](https://travis-ci.org/jeonghanlee/weathers)
 
 
-# Lund, Sweden
+# Berkeley, U.S.A.
 
-![Lund Weather](Lund_Fm.png)
+![Berkeley Weather](Berkeley_Fm.png)
+
 
 # Busan, South Korea
 
